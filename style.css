@@ -1,0 +1,113 @@
+body {
+margin: 0;
+background-image: url(https://webcms.tpilet.ee/static/taustapilt.jpg);
+}
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.site-header nav a {
+    color: #444;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+.site-header nav a.active {
+    color: #f45a1e;
+    border-bottom: 2 px solid #f45a1e;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.header-right-span{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    border-right: 1px #444;
+    height: 70px;
+    padding-right: 20px;
+    color: #9b9b9b;
+}
+.langs a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #444;
+}
+.langs a.active {
+    color: #f45a1e;
+    font-weight: bold;
+}
+.hero{
+    position: relative;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.search-box{
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    width: 320px;
+}
+.tabs{
+    display: flex;
+    border-bottom: 1px #ddd;
+}
+.tabs button{
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tabs button.active{
+    border-bottom: 2px solid #f45a1e;
+    color: #f45a1e;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input, form button{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+form button{
+    background: #f45a1e;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.popular{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.popular h3{
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+.popular ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 13px;
+}
